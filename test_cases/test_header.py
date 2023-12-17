@@ -18,6 +18,10 @@ class TestHeader(unittest.TestCase):
         self.home_page.load()
         self.home_page.click_logo()
 
+    def test_products_nav(self):
+        self.home_page.load()
+        self.home_page.products_nav()
+
 
 if __name__ == "__main__":
     unittest.main()

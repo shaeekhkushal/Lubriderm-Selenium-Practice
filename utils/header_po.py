@@ -39,3 +39,52 @@ class Header:
             print("Logo element not found within the specified time.")
         time.sleep(2)
         return self
+
+    def products_nav(self):
+        try:
+            hover_on_products = WebDriverWait(self.driver, 30).until(
+                EC.presence_of_element_located((By.XPATH, HeaderLocators.products)))
+            action = ActionChains(self.driver)
+            print("hover_on_products is:", hover_on_products.text)
+            action.move_to_element(hover_on_products).perform()
+            time.sleep(1)
+
+            click_on_all_products = WebDriverWait(self.driver, 10).until(
+                EC.presence_of_element_located((By.XPATH, HeaderLocators.all_products)))
+            time.sleep(1)
+            print("First Navigation Text:", click_on_all_products.text)
+            time.sleep(1)
+            action.click(click_on_all_products).perform()
+            time.sleep(1)
+            current_url = self.driver.current_url
+            title = self.driver.title
+            print("Redirected URL is:", current_url)
+            print("Page Title:", title)
+            self.driver.back()
+            time.sleep(1)
+
+            hover_on_products = WebDriverWait(self.driver, 30).until(
+                EC.presence_of_element_located((By.XPATH, HeaderLocators.products)))
+            action = ActionChains(self.driver)
+            print("hover_on_products is:", hover_on_products.text)
+            action.move_to_element(hover_on_products).perform()
+            time.sleep(1)
+
+            click_on_daily_moisture = WebDriverWait(self.driver, 10).until(
+                EC.presence_of_element_located((By.XPATH, HeaderLocators.daily_moisture)))
+            time.sleep(1)
+            print("First Navigation Text:", click_on_daily_moisture.text)
+            time.sleep(1)
+            action.click(click_on_daily_moisture).perform()
+            time.sleep(1)
+            current_url = self.driver.current_url
+            title = self.driver.title
+            print("Redirected URL is:", current_url)
+            print("Page Title:", title)
+            self.driver.back()
+            time.sleep(1)
+
+        except TimeoutException:
+            print("Products element not found within the specified time.")
+        time.sleep(2)
+        return self
