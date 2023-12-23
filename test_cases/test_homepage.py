@@ -20,3 +20,7 @@ class TestHomepage:
     def test_our_products_section(self):
         self.Homepage.load()
         self.Homepage.our_products_section()
+
+    def test_our_bestsellers_section(self):
+        self.Homepage.load()
+        self.Homepage.our_bestsellers_section()

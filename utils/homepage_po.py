@@ -212,3 +212,166 @@ class Homepage:
             print("our_products_section element not found within the specified time.")
         time.sleep(2)
         return self
+
+    def our_bestsellers_section(self):
+        try:
+            scroll_to_our_bestsellers = WebDriverWait(self.driver, 10).until(
+                EC.presence_of_element_located((By.XPATH, HomepageLocators.our_bestseller)))
+            self.driver.execute_script("arguments[0].scrollIntoView();", scroll_to_our_bestsellers)
+            time.sleep(1)
+            print("Section title is:", scroll_to_our_bestsellers.text)
+
+            product_card1 = WebDriverWait(self.driver, 10).until(
+                EC.presence_of_element_located((By.XPATH, HomepageLocators.product1_card_image)))
+
+            if product_card1.is_displayed():
+                print("Product image is present")
+            else:
+                print("!!!!!!!!!! Product image not present !!!!!!!!!!")
+            time.sleep(1)
+
+            click_on_product_card1_image = WebDriverWait(self.driver, 10).until(
+                EC.presence_of_element_located((By.XPATH, HomepageLocators.product1_card_image)))
+            time.sleep(1)
+            print("Product name Text:", click_on_product_card1_image.text)
+            time.sleep(1)
+            click_on_product_card1_image.click()
+            time.sleep(2)
+            current_url = self.driver.current_url
+            title = self.driver.title
+            print("Redirected URL is:", current_url)
+            print("Page Title:", title)
+            self.driver.back()
+            time.sleep(1)
+
+            scroll_to_our_bestsellers = WebDriverWait(self.driver, 10).until(
+                EC.presence_of_element_located((By.XPATH, HomepageLocators.our_bestseller)))
+            self.driver.execute_script("arguments[0].scrollIntoView();", scroll_to_our_bestsellers)
+            time.sleep(1)
+
+            click_on_product_card1_name = WebDriverWait(self.driver, 10).until(
+                EC.presence_of_element_located((By.XPATH, HomepageLocators.product1_card_name)))
+            time.sleep(1)
+            print("Product name Text:", click_on_product_card1_name.text)
+            time.sleep(1)
+            click_on_product_card1_name.click()
+            time.sleep(2)
+            current_url = self.driver.current_url
+            title = self.driver.title
+            print("Redirected URL is:", current_url)
+            print("Page Title:", title)
+            self.driver.back()
+            time.sleep(1)
+
+            scroll_to_our_bestsellers = WebDriverWait(self.driver, 10).until(
+                EC.presence_of_element_located((By.XPATH, HomepageLocators.our_bestseller)))
+            self.driver.execute_script("arguments[0].scrollIntoView();", scroll_to_our_bestsellers)
+            time.sleep(1)
+
+            click_on_buy_now_cta1 = WebDriverWait(self.driver, 10).until(
+                EC.presence_of_element_located((By.XPATH, HomepageLocators.buy_now1)))
+            time.sleep(1)
+            print("CTA Text:", click_on_buy_now_cta1.text)
+            time.sleep(1)
+            click_on_buy_now_cta1.click()
+            time.sleep(5)
+
+            price_spider_pop_up1 = WebDriverWait(self.driver, 10).until(
+                EC.presence_of_element_located((By.XPATH, HomepageLocators.price_spider_pop_up1)))
+            if price_spider_pop_up1.is_displayed():
+                print("Price spider Pop up displayed")
+            else:
+                print("!!!!!!!!!! Price spider Pop up not displayed !!!!!!!!!!")
+
+            price_spider_pop_up1_close = WebDriverWait(self.driver, 10).until(
+                EC.presence_of_element_located((By.XPATH, HomepageLocators.price_spider_pop_up1_close)))
+            price_spider_pop_up1_close.click()
+
+            if price_spider_pop_up1_close.is_enabled():
+                print("Price spider Pop up closed")
+            else:
+                print("!!!!!!!!!! Price spider Pop up not closed !!!!!!!!!!")
+            time.sleep(2)
+
+            scroll_to_our_bestsellers = WebDriverWait(self.driver, 10).until(
+                EC.presence_of_element_located((By.XPATH, HomepageLocators.our_bestseller)))
+            self.driver.execute_script("arguments[0].scrollIntoView();", scroll_to_our_bestsellers)
+            time.sleep(1)
+            print("Section title is:", scroll_to_our_bestsellers.text)
+
+            product_card2 = WebDriverWait(self.driver, 10).until(
+                EC.presence_of_element_located((By.XPATH, HomepageLocators.product2_card_image)))
+
+            if product_card2.is_displayed():
+                print("Product image is present")
+            else:
+                print("!!!!!!!!!! Product image not present !!!!!!!!!!")
+            time.sleep(1)
+
+            click_on_product_card2_image = WebDriverWait(self.driver, 10).until(
+                EC.presence_of_element_located((By.XPATH, HomepageLocators.product2_card_image)))
+            time.sleep(1)
+            print("Product name Text:", click_on_product_card2_image.text)
+            time.sleep(1)
+            click_on_product_card2_image.click()
+            time.sleep(2)
+            current_url = self.driver.current_url
+            title = self.driver.title
+            print("Redirected URL is:", current_url)
+            print("Page Title:", title)
+            self.driver.back()
+            time.sleep(1)
+
+            scroll_to_our_bestsellers = WebDriverWait(self.driver, 10).until(
+                EC.presence_of_element_located((By.XPATH, HomepageLocators.our_bestseller)))
+            self.driver.execute_script("arguments[0].scrollIntoView();", scroll_to_our_bestsellers)
+            time.sleep(1)
+
+            click_on_product_card2_name = WebDriverWait(self.driver, 10).until(
+                EC.presence_of_element_located((By.XPATH, HomepageLocators.product2_card_name)))
+            time.sleep(1)
+            print("Product name Text:", click_on_product_card2_name.text)
+            time.sleep(1)
+            click_on_product_card2_name.click()
+            time.sleep(2)
+            current_url = self.driver.current_url
+            title = self.driver.title
+            print("Redirected URL is:", current_url)
+            print("Page Title:", title)
+            self.driver.back()
+            time.sleep(1)
+
+            scroll_to_our_bestsellers = WebDriverWait(self.driver, 10).until(
+                EC.presence_of_element_located((By.XPATH, HomepageLocators.our_bestseller)))
+            self.driver.execute_script("arguments[0].scrollIntoView();", scroll_to_our_bestsellers)
+            time.sleep(1)
+
+            click_on_buy_now_cta2 = WebDriverWait(self.driver, 10).until(
+                EC.presence_of_element_located((By.XPATH, HomepageLocators.buy_now2)))
+            time.sleep(1)
+            print("CTA Text:", click_on_buy_now_cta2.text)
+            time.sleep(1)
+            click_on_buy_now_cta2.click()
+            time.sleep(5)
+
+            price_spider_pop_up2 = WebDriverWait(self.driver, 10).until(
+                EC.presence_of_element_located((By.XPATH, HomepageLocators.price_spider_pop_up2)))
+            if price_spider_pop_up2.is_displayed():
+                print("Price spider Pop up displayed")
+            else:
+                print("!!!!!!!!!! Price spider Pop up not displayed !!!!!!!!!!")
+
+            price_spider_pop_up2_close = WebDriverWait(self.driver, 10).until(
+                EC.presence_of_element_located((By.XPATH, HomepageLocators.price_spider_pop_up2_close)))
+            price_spider_pop_up2_close.click()
+
+            if price_spider_pop_up2_close.is_enabled():
+                print("Price spider Pop up closed")
+            else:
+                print("!!!!!!!!!! Price spider Pop up not closed !!!!!!!!!!")
+            time.sleep(2)
+
+        except TimeoutException:
+            print("our_bestsellers_section element not found within the specified time.")
+        time.sleep(2)
+        return self

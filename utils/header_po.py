@@ -70,7 +70,7 @@ class Header:
             time.sleep(1)
             print("Navigation Text:", click_on_all_products.text)
             time.sleep(1)
-            action.click(click_on_all_products).perform()
+            click_on_all_products.click()
             time.sleep(2)
             current_url = self.driver.current_url
             title = self.driver.title
@@ -91,7 +91,7 @@ class Header:
             time.sleep(1)
             print("Navigation Text:", click_on_daily_moisture.text)
             time.sleep(1)
-            action.click(click_on_daily_moisture).perform()
+            click_on_daily_moisture.click()
             time.sleep(2)
             current_url = self.driver.current_url
             title = self.driver.title
@@ -112,7 +112,7 @@ class Header:
             time.sleep(1)
             print("Navigation Text:", click_on_advance_therapy.text)
             time.sleep(1)
-            action.click(click_on_advance_therapy).perform()
+            click_on_advance_therapy.click()
             time.sleep(2)
             current_url = self.driver.current_url
             title = self.driver.title
@@ -133,7 +133,7 @@ class Header:
             time.sleep(1)
             print("Navigation Text:", click_on_intense_skin_repair.text)
             time.sleep(1)
-            action.click(click_on_intense_skin_repair).perform()
+            click_on_intense_skin_repair.click()
             time.sleep(2)
             current_url = self.driver.current_url
             title = self.driver.title
@@ -161,7 +161,7 @@ class Header:
             time.sleep(1)
             print("Navigation Text:", click_on_all_skin_concerns.text)
             time.sleep(1)
-            action.click(click_on_all_skin_concerns).perform()
+            click_on_all_skin_concerns.click()
             time.sleep(2)
             current_url = self.driver.current_url
             title = self.driver.title
@@ -182,7 +182,7 @@ class Header:
             time.sleep(1)
             print("Navigation Text:", click_on_normal_to_dry_skin.text)
             time.sleep(1)
-            action.click(click_on_normal_to_dry_skin).perform()
+            click_on_normal_to_dry_skin.click()
             time.sleep(2)
             current_url = self.driver.current_url
             title = self.driver.title
@@ -203,7 +203,7 @@ class Header:
             time.sleep(1)
             print("Navigation Text:", click_on_extra_dry_skin.text)
             time.sleep(1)
-            action.click(click_on_extra_dry_skin).perform()
+            click_on_extra_dry_skin.click()
             time.sleep(2)
             current_url = self.driver.current_url
             title = self.driver.title
@@ -224,7 +224,7 @@ class Header:
             time.sleep(1)
             print("Navigation Text:", click_on_mature_skin_care.text)
             time.sleep(1)
-            action.click(click_on_mature_skin_care).perform()
+            click_on_mature_skin_care.click()
             time.sleep(2)
             current_url = self.driver.current_url
             title = self.driver.title
@@ -245,7 +245,7 @@ class Header:
             time.sleep(1)
             print("Navigation Text:", click_on_tattoo_after_care.text)
             time.sleep(1)
-            action.click(click_on_tattoo_after_care).perform()
+            click_on_tattoo_after_care.click()
             time.sleep(2)
             current_url = self.driver.current_url
             title = self.driver.title
@@ -266,7 +266,7 @@ class Header:
             time.sleep(1)
             print("Navigation Text:", click_on_itchy_dry_skin.text)
             time.sleep(1)
-            action.click(click_on_itchy_dry_skin).perform()
+            click_on_itchy_dry_skin.click()
             time.sleep(2)
             current_url = self.driver.current_url
             title = self.driver.title
@@ -294,7 +294,7 @@ class Header:
             time.sleep(1)
             print("Navigation Text:", click_on_overview.text)
             time.sleep(1)
-            action.click(click_on_overview).perform()
+            click_on_overview.click()
             time.sleep(2)
             current_url = self.driver.current_url
             title = self.driver.title
@@ -315,7 +315,7 @@ class Header:
             time.sleep(1)
             print("Navigation Text:", click_on_our_ingredients.text)
             time.sleep(1)
-            action.click(click_on_our_ingredients).perform()
+            click_on_our_ingredients.click()
             time.sleep(2)
             current_url = self.driver.current_url
             title = self.driver.title
@@ -336,7 +336,7 @@ class Header:
             time.sleep(1)
             print("Navigation Text:", click_on_contact_us.text)
             time.sleep(1)
-            action.click(click_on_contact_us).perform()
+            click_on_contact_us.click()
             time.sleep(2)
             current_url = self.driver.current_url
             title = self.driver.title

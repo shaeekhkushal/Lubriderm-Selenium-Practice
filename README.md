@@ -11,6 +11,6 @@ Virtual environment used in Local: Yes Git: Yes Github repo: https://github.com/
 Chrome version: 120 (as of 20-12-2023)
 
 Run command in powershell: 
-locate the directory: cd D:\Lubriderm-Selenium-Automation 
+locate the directory: cd E:\Projects\Lubriderm-Selenium-Practice 
 activate the venv: .\venv\Scripts\Activate 
-run the test files: python -m pytest -s D:\Lubriderm-Selenium-Automation\test_cases
+run the test files: python -m pytest -s E:\Projects\Lubriderm-Selenium-Practice\test_cases
