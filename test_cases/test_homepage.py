@@ -24,3 +24,11 @@ class TestHomepage:
     def test_our_bestsellers_section(self):
         self.Homepage.load()
         self.Homepage.our_bestsellers_section()
+
+    def test_skin_concerns_section(self):
+        self.Homepage.load()
+        self.Homepage.skin_concerns_section()
+
+    def test_related_content_section(self):
+        self.Homepage.load()
+        self.Homepage.related_content_section()

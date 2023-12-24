@@ -36,4 +36,3 @@ class TestHeader:
     def test_where_to_buy(self):
         self.header.load()
         self.header.where_to_buy()
-        
