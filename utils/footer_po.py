@@ -65,7 +65,7 @@ class Footer:
             time.sleep(3)
             input_email = WebDriverWait(self.driver, 10).until(
                 EC.presence_of_element_located((By.XPATH, FooterLocators.input_email)))
-            input_email.send_keys("shaeek.test.sji@gmail.com")
+            input_email.send_keys("your_mail@gmail.com")
             time.sleep(2)
 
             grab_disclaimer_copy = WebDriverWait(self.driver, 10).until(
