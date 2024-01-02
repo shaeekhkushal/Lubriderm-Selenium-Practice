@@ -264,35 +264,35 @@ class Homepage:
             self.driver.back()
             time.sleep(1)
 
-            # scroll_to_our_bestsellers = WebDriverWait(self.driver, 10).until(
-            #     EC.presence_of_element_located((By.XPATH, HomepageLocators.our_bestseller)))
-            # self.driver.execute_script("arguments[0].scrollIntoView();", scroll_to_our_bestsellers)
-            # time.sleep(1)
-            #
-            # click_on_buy_now_cta1 = WebDriverWait(self.driver, 10).until(
-            #     EC.presence_of_element_located((By.XPATH, HomepageLocators.buy_now1)))
-            # time.sleep(1)
-            # logging.info("CTA Text: %s", click_on_buy_now_cta1.text)
-            # time.sleep(1)
-            # click_on_buy_now_cta1.click()
-            # time.sleep(5)
-            #
-            # price_spider_pop_up1 = WebDriverWait(self.driver, 10).until(
-            #     EC.presence_of_element_located((By.CLASS_NAME, HomepageLocators.price_spider_pop_up1)))
-            # if price_spider_pop_up1.is_displayed():
-            #     logging.info("Price spider Pop up displayed %s")
-            # else:
-            #     logging.info("!!!!!!!!!! Price spider Pop up not displayed !!!!!!!!!! %s")
-            #
-            # price_spider_pop_up1_close = WebDriverWait(self.driver, 10).until(
-            #     EC.presence_of_element_located((By.CLASS_NAME, HomepageLocators.price_spider_pop_up1_close)))
-            # price_spider_pop_up1_close.click()
-            #
-            # if price_spider_pop_up1_close.is_enabled():
-            #     logging.info("Price spider Pop up closed %s")
-            # else:
-            #     logging.info("!!!!!!!!!! Price spider Pop up not closed !!!!!!!!!! %s")
-            # time.sleep(2)
+            scroll_to_our_bestsellers = WebDriverWait(self.driver, 10).until(
+                EC.presence_of_element_located((By.XPATH, HomepageLocators.our_bestseller)))
+            self.driver.execute_script("arguments[0].scrollIntoView();", scroll_to_our_bestsellers)
+            time.sleep(1)
+
+            click_on_buy_now_cta1 = WebDriverWait(self.driver, 10).until(
+                EC.presence_of_element_located((By.XPATH, HomepageLocators.buy_now1)))
+            time.sleep(1)
+            logging.info("CTA Text: %s", click_on_buy_now_cta1.text)
+            time.sleep(1)
+            click_on_buy_now_cta1.click()
+            time.sleep(5)
+
+            price_spider_pop_up1 = WebDriverWait(self.driver, 10).until(
+                EC.presence_of_element_located((By.CSS_SELECTOR, HomepageLocators.price_spider_pop_up1)))
+            if price_spider_pop_up1.is_displayed():
+                logging.info("Price spider Pop up displayed %s")
+            else:
+                logging.info("!!!!!!!!!! Price spider Pop up not displayed !!!!!!!!!! %s")
+
+            price_spider_pop_up1_close = WebDriverWait(self.driver, 10).until(
+                EC.presence_of_element_located((By.CSS_SELECTOR, HomepageLocators.price_spider_pop_up1_close)))
+            price_spider_pop_up1_close.click()
+
+            if price_spider_pop_up1_close.is_enabled():
+                logging.info("Price spider Pop up closed %s")
+            else:
+                logging.info("!!!!!!!!!! Price spider Pop up not closed !!!!!!!!!! %s")
+            time.sleep(2)
 
             scroll_to_our_bestsellers = WebDriverWait(self.driver, 10).until(
                 EC.presence_of_element_located((By.XPATH, HomepageLocators.our_bestseller)))
@@ -342,35 +342,35 @@ class Homepage:
             self.driver.back()
             time.sleep(1)
 
-            # scroll_to_our_bestsellers = WebDriverWait(self.driver, 10).until(
-            #     EC.presence_of_element_located((By.XPATH, HomepageLocators.our_bestseller)))
-            # self.driver.execute_script("arguments[0].scrollIntoView();", scroll_to_our_bestsellers)
-            # time.sleep(1)
-            #
-            # click_on_buy_now_cta2 = WebDriverWait(self.driver, 10).until(
-            #     EC.presence_of_element_located((By.XPATH, HomepageLocators.buy_now2)))
-            # time.sleep(1)
-            # logging.info("CTA Text: %s", click_on_buy_now_cta2.text)
-            # time.sleep(1)
-            # click_on_buy_now_cta2.click()
-            # time.sleep(5)
-            #
-            # price_spider_pop_up2 = WebDriverWait(self.driver, 10).until(
-            #     EC.presence_of_element_located((By.CLASS_NAME, HomepageLocators.price_spider_pop_up2)))
-            # if price_spider_pop_up2.is_displayed():
-            #     logging.info("Price spider Pop up displayed %s")
-            # else:
-            #     logging.info("!!!!!!!!!! Price spider Pop up not displayed !!!!!!!!!! %s")
-            #
-            # price_spider_pop_up2_close = WebDriverWait(self.driver, 10).until(
-            #     EC.presence_of_element_located((By.CLASS_NAME, HomepageLocators.price_spider_pop_up2_close)))
-            # price_spider_pop_up2_close.click()
-            #
-            # if price_spider_pop_up2_close.is_enabled():
-            #     logging.info("Price spider Pop up closed %s")
-            # else:
-            #     logging.info("!!!!!!!!!! Price spider Pop up not closed !!!!!!!!!! %s")
-            # time.sleep(2)
+            scroll_to_our_bestsellers = WebDriverWait(self.driver, 10).until(
+                EC.presence_of_element_located((By.XPATH, HomepageLocators.our_bestseller)))
+            self.driver.execute_script("arguments[0].scrollIntoView();", scroll_to_our_bestsellers)
+            time.sleep(1)
+
+            click_on_buy_now_cta2 = WebDriverWait(self.driver, 10).until(
+                EC.presence_of_element_located((By.XPATH, HomepageLocators.buy_now2)))
+            time.sleep(1)
+            logging.info("CTA Text: %s", click_on_buy_now_cta2.text)
+            time.sleep(1)
+            click_on_buy_now_cta2.click()
+            time.sleep(5)
+
+            price_spider_pop_up2 = WebDriverWait(self.driver, 10).until(
+                EC.presence_of_element_located((By.CSS_SELECTOR, HomepageLocators.price_spider_pop_up2)))
+            if price_spider_pop_up2.is_displayed():
+                logging.info("Price spider Pop up displayed %s")
+            else:
+                logging.info("!!!!!!!!!! Price spider Pop up not displayed !!!!!!!!!! %s")
+
+            price_spider_pop_up2_close = WebDriverWait(self.driver, 10).until(
+                EC.presence_of_element_located((By.CSS_SELECTOR, HomepageLocators.price_spider_pop_up2_close)))
+            price_spider_pop_up2_close.click()
+
+            if price_spider_pop_up2_close.is_enabled():
+                logging.info("Price spider Pop up closed %s")
+            else:
+                logging.info("!!!!!!!!!! Price spider Pop up not closed !!!!!!!!!! %s")
+            time.sleep(2)
 
             scroll_to_our_bestsellers = WebDriverWait(self.driver, 10).until(
                 EC.presence_of_element_located((By.XPATH, HomepageLocators.our_bestseller)))
@@ -420,35 +420,35 @@ class Homepage:
             self.driver.back()
             time.sleep(1)
 
-            # scroll_to_our_bestsellers = WebDriverWait(self.driver, 10).until(
-            #     EC.presence_of_element_located((By.XPATH, HomepageLocators.our_bestseller)))
-            # self.driver.execute_script("arguments[0].scrollIntoView();", scroll_to_our_bestsellers)
-            # time.sleep(1)
-            #
-            # click_on_buy_now_cta3 = WebDriverWait(self.driver, 10).until(
-            #     EC.presence_of_element_located((By.XPATH, HomepageLocators.buy_now3)))
-            # time.sleep(1)
-            # logging.info("CTA Text: %s", click_on_buy_now_cta3.text)
-            # time.sleep(1)
-            # click_on_buy_now_cta3.click()
-            # time.sleep(5)
-            #
-            # price_spider_pop_up3 = WebDriverWait(self.driver, 10).until(
-            #     EC.presence_of_element_located((By.CLASS_NAME, HomepageLocators.price_spider_pop_up3)))
-            # if price_spider_pop_up3.is_displayed():
-            #     logging.info("Price spider Pop up displayed %s")
-            # else:
-            #     logging.info("!!!!!!!!!! Price spider Pop up not displayed !!!!!!!!!! %s")
-            #
-            # price_spider_pop_up3_close = WebDriverWait(self.driver, 10).until(
-            #     EC.presence_of_element_located((By.CLASS_NAME, HomepageLocators.price_spider_pop_up3_close)))
-            # price_spider_pop_up3_close.click()
-            #
-            # if price_spider_pop_up3_close.is_enabled():
-            #     logging.info("Price spider Pop up closed %s")
-            # else:
-            #     logging.info("!!!!!!!!!! Price spider Pop up not closed !!!!!!!!!! %s")
-            # time.sleep(2)
+            scroll_to_our_bestsellers = WebDriverWait(self.driver, 10).until(
+                EC.presence_of_element_located((By.XPATH, HomepageLocators.our_bestseller)))
+            self.driver.execute_script("arguments[0].scrollIntoView();", scroll_to_our_bestsellers)
+            time.sleep(1)
+
+            click_on_buy_now_cta3 = WebDriverWait(self.driver, 10).until(
+                EC.presence_of_element_located((By.XPATH, HomepageLocators.buy_now3)))
+            time.sleep(1)
+            logging.info("CTA Text: %s", click_on_buy_now_cta3.text)
+            time.sleep(1)
+            click_on_buy_now_cta3.click()
+            time.sleep(5)
+
+            price_spider_pop_up3 = WebDriverWait(self.driver, 10).until(
+                EC.presence_of_element_located((By.CSS_SELECTOR, HomepageLocators.price_spider_pop_up3)))
+            if price_spider_pop_up3.is_displayed():
+                logging.info("Price spider Pop up displayed %s")
+            else:
+                logging.info("!!!!!!!!!! Price spider Pop up not displayed !!!!!!!!!! %s")
+
+            price_spider_pop_up3_close = WebDriverWait(self.driver, 10).until(
+                EC.presence_of_element_located((By.CSS_SELECTOR, HomepageLocators.price_spider_pop_up3_close)))
+            price_spider_pop_up3_close.click()
+
+            if price_spider_pop_up3_close.is_enabled():
+                logging.info("Price spider Pop up closed %s")
+            else:
+                logging.info("!!!!!!!!!! Price spider Pop up not closed !!!!!!!!!! %s")
+            time.sleep(2)
 
         except TimeoutException:
             logging.info("our_bestsellers_section element not found within the specified time. %s")
