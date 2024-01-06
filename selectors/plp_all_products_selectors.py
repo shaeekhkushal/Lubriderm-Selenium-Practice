@@ -29,3 +29,29 @@ class PlpAllProducts:
     product4_buy_now_cta = '//*[@id="__next"]/main/div[3]/div[1]/div[4]/div[3]/div[2]/div'
     price_spider_pop_up4 = "body > div.ps-container.ps-lightbox.ps-6462c37d7d0774004fa25168.ps-open > div"
     price_spider_pop_up4_close = "body > div.ps-container.ps-lightbox.ps-6462c37d7d0774004fa25168.ps-open > div > span"
+    product5_image = '//*[@id="__next"]/main/div[3]/div[1]/div[5]/div[1]/a'
+    fifth_eye_brow_tag = '//*[@id="__next"]/main/div[3]/div[1]/div[5]/div[2]/p'
+    product5_name = '//*[@id="__next"]/main/div[3]/div[1]/div[5]/div[2]/a'
+    product5_buy_now_cta = '//*[@id="__next"]/main/div[3]/div[1]/div[5]/div[3]/div[2]/div'
+    price_spider_pop_up5 = "body > div.ps-container.ps-lightbox.ps-6462c37d7d0774004fa25168.ps-open > div"
+    price_spider_pop_up5_close = "body > div.ps-container.ps-lightbox.ps-6462c37d7d0774004fa25168.ps-open > div > span"
+    product6_image = '//*[@id="__next"]/main/div[3]/div[1]/div[6]/div[1]/a'
+    sixth_eye_brow_tag = '//*[@id="__next"]/main/div[3]/div[1]/div[6]/div[2]/p'
+    product6_name = '//*[@id="__next"]/main/div[3]/div[1]/div[6]/div[2]/a'
+    product6_buy_now_cta = '//*[@id="__next"]/main/div[3]/div[1]/div[6]/div[3]/div[2]/div'
+    price_spider_pop_up6 = "body > div.ps-container.ps-lightbox.ps-6462c37d7d0774004fa25168.ps-open > div"
+    price_spider_pop_up6_close = "body > div.ps-container.ps-lightbox.ps-6462c37d7d0774004fa25168.ps-open > div > span"
+    products_card_third_row = '//*[@id="__next"]/main/div[3]/div[1]/div[7]'
+    product7_image = '//*[@id="__next"]/main/div[3]/div[1]/div[7]/div[1]/a'
+    seventh_eye_brow_tag = '//*[@id="__next"]/main/div[3]/div[1]/div[7]/div[2]/p'
+    product7_name = '//*[@id="__next"]/main/div[3]/div[1]/div[7]/div[2]/a'
+    product7_buy_now_cta = '//*[@id="__next"]/main/div[3]/div[1]/div[7]/div[3]/div[2]/div'
+    price_spider_pop_up7 = "body > div.ps-container.ps-lightbox.ps-6462c37d7d0774004fa25168.ps-open > div"
+    price_spider_pop_up7_close = "body > div.ps-container.ps-lightbox.ps-6462c37d7d0774004fa25168.ps-open > div > span"
+    learn_more_about_section = '//*[@id="__next"]/main/div[3]/div[2]'
+    learn_more_about_image1 = '//*[@id="__next"]/main/div[3]/div[3]/div[1]/div[1]/a'
+    learn_more_about_header1_text = '//*[@id="__next"]/main/div[3]/div[3]/div[1]/div[2]/p'
+    learn_more_about1_cta = '//*[@id="__next"]/main/div[3]/div[3]/div[1]/div[2]/a'
+    learn_more_about_image2 = '//*[@id="__next"]/main/div[3]/div[3]/div[2]/div[1]/a'
+    learn_more_about_header2_text = '//*[@id="__next"]/main/div[3]/div[3]/div[2]/div[2]/p'
+    learn_more_about2_cta = '//*[@id="__next"]/main/div[3]/div[3]/div[2]/div[2]/a'
