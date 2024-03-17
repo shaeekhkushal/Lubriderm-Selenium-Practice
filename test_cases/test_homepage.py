@@ -15,20 +15,25 @@ class TestHomepage:
 
     def test_banner(self):
         self.Homepage.load()
-        self.Homepage.banner()
+        self.Homepage.close_pop_up()
+        self.Homepage.banner_section()
 
-    def test_our_products_section(self):
+    def test_shop_by_collection(self):
         self.Homepage.load()
-        self.Homepage.our_products_section()
+        self.Homepage.close_pop_up()
+        self.Homepage.shop_by_collection()
 
-    def test_our_bestsellers_section(self):
+    def test_about_lubriderm(self):
         self.Homepage.load()
-        self.Homepage.our_bestsellers_section()
+        self.Homepage.close_pop_up()
+        self.Homepage.about_lubriderm()
 
-    def test_skin_concerns_section(self):
+    def test_our_best_seller(self):
         self.Homepage.load()
-        self.Homepage.skin_concerns_section()
+        self.Homepage.close_pop_up()
+        self.Homepage.our_best_seller()
 
     def test_related_content_section(self):
         self.Homepage.load()
+        self.Homepage.close_pop_up()
         self.Homepage.related_content_section()
