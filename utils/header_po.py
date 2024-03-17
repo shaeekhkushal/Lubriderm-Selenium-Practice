@@ -1,3 +1,4 @@
+
 import time
 import logging
 
@@ -9,6 +10,12 @@ from selenium.webdriver.support.ui import WebDriverWait
 
 from config import Config
 from selectors.header_selectors import HeaderLocators
+
+
+def handle_exception(driver: object, error_message: object) -> object:
+    logging.error(error_message)
+    driver.close()
+    assert False, error_message
 
 
 class Header:
@@ -38,7 +45,7 @@ class Header:
             self.driver.back()
 
         except TimeoutException:
-            logging.info("Email sign up element not found within the specified time. %s")
+            handle_exception(self.driver, "Products element not found within the specified time. %s")
         time.sleep(2)
         return self
 
@@ -53,7 +60,7 @@ class Header:
             logging.info("Current URL is: %s", current_url)
 
         except TimeoutException:
-            logging.info("Logo element not found within the specified time. %s")
+            handle_exception(self.driver, "Products element not found within the specified time.%s")
         time.sleep(2)
         return self
 
@@ -144,7 +151,7 @@ class Header:
             time.sleep(1)
 
         except TimeoutException:
-            logging.info("Products element not found within the specified time. %s")
+            handle_exception(self.driver, "Products element not found within the specified time.%s")
         time.sleep(2)
         return self
 
@@ -277,7 +284,7 @@ class Header:
             time.sleep(1)
 
         except TimeoutException:
-            logging.info("Skin Concerns element not found within the specified time. %s")
+            handle_exception(self.driver, "Products element not found within the specified time.%s")
         time.sleep(2)
         return self
 
@@ -347,7 +354,7 @@ class Header:
             time.sleep(1)
 
         except TimeoutException:
-            logging.info("About Lubriderm element not found within the specified time. %s")
+            handle_exception(self.driver, "Products element not found within the specified time.%s")
         time.sleep(2)
         return self
 
@@ -364,7 +371,6 @@ class Header:
             self.driver.back()
 
         except TimeoutException:
-            logging.info("Email sign up element not found within the specified time. %s")
+            handle_exception(self.driver, "Products element not found within the specified time.%s")
         time.sleep(2)
         return self
-    
